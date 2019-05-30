@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Photos28.view.SearchScreenController">
+   <children>
+      <Pane prefHeight="389.0" prefWidth="378.0">
+         <children>
+            <Button id="close_id" fx:id="backButton" layoutX="14.0" layoutY="31.0" mnemonicParsing="false" onAction="#back" text="Back" />
+            <Text layoutX="141.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date Search">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="fromDate" layoutX="114.0" layoutY="105.0" />
+            <TextField fx:id="toDate" layoutX="114.0" layoutY="161.0" />
+            <Text layoutX="39.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FROM:" />
+            <Text layoutX="50.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TO:" />
+            <Button fx:id="searchButton" layoutX="115.0" layoutY="299.0" mnemonicParsing="false" onAction="#search" text="Create Search Album" />
+            <Text layoutX="48.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Note: Please put the dates in the format of: MM-DD-YYYY" wrappingWidth="282.1923828125" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

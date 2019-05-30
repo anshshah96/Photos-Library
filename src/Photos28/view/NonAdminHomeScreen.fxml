@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="426.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Photos28.view.NonAdminScreenController">
+   <children>
+      <Button fx:id="logoutButton" layoutX="438.0" layoutY="40.0" mnemonicParsing="false" onAction="#logout" text="Logout" />
+      <ScrollPane fx:id="aList" layoutX="47.0" layoutY="53.0" prefHeight="316.0" prefWidth="333.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="317.0" prefWidth="331.0" />
+        </content>
+      </ScrollPane>
+      <Button fx:id="CreateAlbumButton" layoutX="438.0" layoutY="87.0" mnemonicParsing="false" onAction="#createAlbum" text="Create Album" />
+      <Button layoutX="438.0" layoutY="135.0" mnemonicParsing="false" onAction="#deleteAlbum" text="Delete Album" />
+      <Button layoutX="433.0" layoutY="185.0" mnemonicParsing="false" onAction="#renameAlbum" text="Rename Album" />
+      <Button fx:id="dateSearchButton" layoutX="433.0" layoutY="235.0" mnemonicParsing="false" onAction="#dateSearch" text="Search by Date" />
+      <Button fx:id="tagSearchButton" layoutX="433.0" layoutY="281.0" mnemonicParsing="false" onAction="#tagSearch" text="Search by Tag" />
+   </children>
+</AnchorPane>

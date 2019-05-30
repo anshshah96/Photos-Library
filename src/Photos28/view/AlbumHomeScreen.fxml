@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="554.0" prefWidth="735.0" style="-fx-background-color: tan;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Photos28.view.AlbumHomeController">
+   <children>
+      <ScrollPane layoutX="11.0" layoutY="135.0" prefHeight="349.0" prefWidth="719.0">
+         <content>
+            <FlowPane fx:id="photoPane" hgap="10.0" prefHeight="348.0" prefWidth="712.0" vgap="10.0" />
+         </content>
+      </ScrollPane>
+      <Button fx:id="add" layoutX="11.0" layoutY="108.0" mnemonicParsing="false" onAction="#addPhoto" text="Add Photo" />
+      <Button fx:id="delete" layoutX="215.0" layoutY="108.0" mnemonicParsing="false" onAction="#buttonHelper" text="Delete Photo" />
+      <Button fx:id="editCaption" layoutX="435.0" layoutY="108.0" mnemonicParsing="false" onAction="#buttonHelper" text="Edit Caption" />
+      <Button fx:id="displaySlideshow" layoutX="605.0" layoutY="108.0" mnemonicParsing="false" onAction="#displaySlideshow" text="Display Slideshow" />
+      <Button fx:id="logoutButton" layoutX="669.0" layoutY="14.0" mnemonicParsing="false" onAction="#logout" text="Logout" />
+      <Label fx:id="buttonAction" layoutX="201.0" layoutY="492.0" prefHeight="48.0" prefWidth="339.0" />
+      <Button fx:id="backButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" text="Back" />
+      <Label fx:id="earliestDate" layoutX="164.0" layoutY="42.0" text="EarliestDate" />
+      <Label fx:id="latestDate" layoutX="417.0" layoutY="42.0" text="LatestDate" />
+      <Text layoutX="359.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To" />
+      <Label fx:id="numPhotos" layoutX="332.0" layoutY="65.0" text="NumPhotos" />
+      <Label fx:id="albumName" layoutX="290.0" layoutY="9.0" text="ALBUM NAME">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
